@@ -29,6 +29,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -39,17 +40,18 @@ module.exports = {
             options: {
               maxWidth: 1200,
             },
+            
           },
         ],
       },
-    },
-    resolve: `gatsby-plugin-google-fonts`,
-    options: {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
       fonts: [
         `roboto mono`,
         `muli\:400,400i,700,700i`,
       ],
-      display: "swap"
-    }
-  ],
+      display: "swap",
+    },    
+  },
+],
 }
